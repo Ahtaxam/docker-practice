@@ -140,3 +140,33 @@ we create 2nd volume because every change made in local reflect to container. wh
 so in above command when first volume execute it will map whole project to container folder the second volume map node_modules from container folder to someone places on our computer managed by docker. (means no worry about this).
 
 `using volume every change made in local will keep sync with container folder`
+
+
+### Run docker compose 
+```
+docker-compose up
+```
+
+### Stop docker compose 
+```
+docker-compose down
+```
+
+
+### Stop docker compose and remove images and volumes
+```
+docker-compose down --rmi all -v
+```
+**--rmi all** it will delete all images&container and **-v** it will delete all volumes
+
+
+### push images to dockerHub repository
+```
+docker push name_of_image
+```
+
+
+### pull images to dockerHub repository
+```
+docker pull name_of_image
+```
